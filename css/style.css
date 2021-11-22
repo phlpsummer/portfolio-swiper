@@ -25,9 +25,17 @@ a {
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: 1s; }
+    transition: 0.5s; }
     #wrap .bg li.on {
       opacity: 1; }
+    #wrap .bg li:nth-of-type(1) {
+      background-image: url(../img/bg1.jpg); }
+    #wrap .bg li:nth-of-type(2) {
+      background-image: url(../img/bg2.jpg); }
+    #wrap .bg li:nth-of-type(3) {
+      background-image: url(../img/bg3.jpg); }
+    #wrap .bg li:nth-of-type(4) {
+      background-image: url(../img/bg4.jpg); }
   #wrap .swiper-wrapper {
     width: 100%;
     height: 100%; }
@@ -40,10 +48,15 @@ a {
         width: 100%;
         height: 100%;
         border: 1px solid snow;
-        background: rgba(255, 255, 255, 0.5);
+        background: white;
         padding: 60px;
         font: bold 50px/1 'arial';
-        color: #999; }
+        color: #999;
+        backdrop-filter: blur(20px);
+        opacity: 0.5;
+        transition: opacity 1s; }
+      #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
+        opacity: 1; }
   #wrap .swiper-button-next {
     top: auto;
     bottom: 10vh;
