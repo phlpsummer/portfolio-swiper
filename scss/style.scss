@@ -1,6 +1,12 @@
 @charset 'utf-8';
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700&family=Syncopate:wght@700&display=swap');
 @import 'reset';
+
+
+// font-family: 'Noto Sans KR', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Syncopate', sans-serif;
 
 #wrap {
     width: 100%; height: 100vh;
@@ -43,11 +49,30 @@
                 backdrop-filter: blur(20px);
                 opacity: 0.5;
                 transition: opacity 1s;
+                position: relative;
+
+                &::after {
+                    content: ''; display: block;
+                    height: 100%; width: 3px;
+                    background: #111;
+                    position: absolute;
+                    top: 0; left: 110px;
+                }
+
+                h1 {
+                    font: 60px 'Syncopate'; color: #111;
+                    position: absolute;
+                    bottom: 0; left: 0; margin-left: 60px;
+                    transform: rotate(-90deg);
+                    transform-origin: left center;
+                }
             }
 
             &.swiper-slide-active .inner {
                 opacity: 1;
             }
+            &:nth-of-type(1) { .inner h1 { font-size: 80px;}}
+            &:nth-of-type(3) { .inner h1 { font-size: 55px;}}
         }
     }
 

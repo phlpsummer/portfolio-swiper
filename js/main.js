@@ -1,4 +1,4 @@
-const menu = ["one", "two", "three", "four"]
+const menu = ["INTRO", "UX/UI", "GRID", "CONTACT"]
 
 const swiper = new Swiper('#wrap',{
     slidesPerView: "auto",
@@ -32,6 +32,7 @@ const navi = document.querySelectorAll(".swiper-pagination span");
 // prev.addEventListener("click",activation);
 // next.addEventListener("click",activation);
 // window.addEventListener("mousewheel",activation);
+swiper.on("slideChangeTransitionEnd",activation);
 
 for(let el of navi){
     el.addEventListener("click",(e)=>{
