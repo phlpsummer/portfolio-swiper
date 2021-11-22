@@ -16,6 +16,14 @@ a {
   position: relative;
   background: palegoldenrod;
   overflow: hidden; }
+  #wrap .navibar {
+    width: 100%;
+    height: 8vh;
+    background: #111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
   #wrap .bg li {
     width: 100%;
     height: 100%;
@@ -42,19 +50,16 @@ a {
     height: 100%; }
     #wrap .swiper-wrapper .swiper-slide {
       width: 60vw;
-      height: 60vh;
+      height: 70vh;
       position: relative;
-      top: 20vh; }
+      top: 15vh;
+      left: 10vw; }
       #wrap .swiper-wrapper .swiper-slide .inner {
         width: 100%;
         height: 100%;
-        border: 1px solid snow;
         background: white;
         padding: 60px;
-        font: bold 50px/1 'arial';
-        color: #999;
-        backdrop-filter: blur(20px);
-        opacity: 0.5;
+        opacity: 0;
         transition: opacity 1s;
         position: relative; }
         #wrap .swiper-wrapper .swiper-slide .inner::after {
@@ -67,7 +72,7 @@ a {
           top: 0;
           left: 110px; }
         #wrap .swiper-wrapper .swiper-slide .inner h1 {
-          font: 60px 'Syncopate';
+          font: bold 75px/1 'Syncopate';
           color: #111;
           position: absolute;
           bottom: 0;
@@ -77,29 +82,41 @@ a {
           transform-origin: left center; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
         opacity: 1; }
-      #wrap .swiper-wrapper .swiper-slide:nth-of-type(1) .inner h1 {
-        font-size: 80px; }
-      #wrap .swiper-wrapper .swiper-slide:nth-of-type(3) .inner h1 {
-        font-size: 55px; }
+      #wrap .swiper-wrapper .swiper-slide.intro .inner h1 {
+        font-size: 90px; }
+      #wrap .swiper-wrapper .swiper-slide.intro .inner .txt {
+        width: 100%;
+        height: 100%;
+        padding-left: 110px; }
+        #wrap .swiper-wrapper .swiper-slide.intro .inner .txt h2 {
+          font: 500 32px/1 'Roboto';
+          color: #333;
+          margin-bottom: 60px; }
+        #wrap .swiper-wrapper .swiper-slide.intro .inner .txt p {
+          font: 400 16px/1.6 'Noto Sans KR';
+          color: #444;
+          margin-bottom: 20px; }
+      #wrap .swiper-wrapper .swiper-slide.grid .inner h1 {
+        font-size: 65px; }
   #wrap .swiper-button-next {
-    top: auto;
-    bottom: 10vh;
-    right: 10vw;
-    transform: scale(0.6);
-    filter: brightness(0.2);
-    opacity: 0.5; }
+    top: 4vh;
+    bottom: auto;
+    right: 8vw;
+    transform: scale(0.4);
+    filter: brightness(5) saturate(0);
+    opacity: 1; }
   #wrap .swiper-button-prev {
-    top: auto;
-    bottom: 10vh;
+    top: 4vh;
+    bottom: auto;
     left: auto;
-    right: calc(10vw + 50px);
-    transform: scale(0.6);
-    filter: brightness(0.2);
-    opacity: 0.5; }
+    right: calc(8vw + 50px);
+    transform: scale(0.4);
+    filter: brightness(5) saturate(0);
+    opacity: 1; }
   #wrap .swiper-pagination {
     position: absolute;
-    top: 10vh;
-    right: 10vw;
+    top: 3vh;
+    right: 15vw;
     left: auto;
     width: auto;
     height: 100px; }
@@ -109,7 +126,9 @@ a {
       background: transparent;
       border-radius: 0px;
       margin-left: 40px;
-      opacity: 0.5; }
+      opacity: 0.5;
+      font: 20px/1 'Syncopate';
+      color: #fff; }
       #wrap .swiper-pagination span.swiper-pagination-bullet-active {
         opacity: 1; }
 

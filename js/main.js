@@ -2,8 +2,9 @@ const menu = ["INTRO", "UX/UI", "GRID", "CONTACT"]
 
 const swiper = new Swiper('#wrap',{
     slidesPerView: "auto",
-    centeredSlides: true,
-    spaceBetween: 50,
+    // centeredSlides: true,
+    loop: true,
+    spaceBetween: 100,
     mousewheel: true,
 
     navigation: {
