@@ -6,11 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template</title>
     <script src="https://kit.fontawesome.com/38274d1a6b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script defer src="js/main.js"></script>
 </head>
 <body>
-    
+    <section id="wrap">
+        <ul class="bg">
+            <li class="on"></li>
+        </ul>
+
+        <article class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="inner">one</div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">two</div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">three</div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">four</div>
+            </div>
+        </article>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-pagination"></div>
+    </section>
 </body>
 </html>
