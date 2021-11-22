@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700&family=Syncopate:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;500;700&family=Syncopate:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ a {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: palegoldenrod;
+  background: #111;
   overflow: hidden; }
   #wrap .navibar {
     width: 100%;
@@ -52,7 +52,7 @@ a {
       width: 60vw;
       height: 70vh;
       position: relative;
-      top: 15vh;
+      top: 17vh;
       left: 10vw; }
       #wrap .swiper-wrapper .swiper-slide .inner {
         width: 100%;
@@ -84,18 +84,100 @@ a {
         opacity: 1; }
       #wrap .swiper-wrapper .swiper-slide.intro .inner h1 {
         font-size: 90px; }
-      #wrap .swiper-wrapper .swiper-slide.intro .inner .txt {
+      #wrap .swiper-wrapper .swiper-slide.intro .inner .content {
         width: 100%;
         height: 100%;
         padding-left: 110px; }
-        #wrap .swiper-wrapper .swiper-slide.intro .inner .txt h2 {
-          font: 500 32px/1 'Roboto';
-          color: #333;
-          margin-bottom: 60px; }
-        #wrap .swiper-wrapper .swiper-slide.intro .inner .txt p {
-          font: 400 16px/1.6 'Noto Sans KR';
-          color: #444;
-          margin-bottom: 20px; }
+        #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt {
+          width: 100%;
+          font-size: 0; }
+          #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt h2 {
+            font: 400 34px/1.4 'Outfit';
+            color: #333;
+            margin-bottom: 30px; }
+          #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt p {
+            font: 400 15px/1.6 'Noto Sans KR';
+            color: #444;
+            margin-bottom: 20px; }
+            #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt p:last-of-type {
+              margin-bottom: 30px; }
+          #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt a {
+            display: inline-block;
+            font: 500 15px/1 'Outfit';
+            color: #444;
+            padding: 15px 20px;
+            margin-bottom: 30px; }
+            #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt a i {
+              font-size: 12px;
+              margin-right: 5px;
+              color: #444; }
+            #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt a:nth-of-type(1) {
+              border-top: 2px solid #333;
+              border-bottom: 2px solid #333;
+              border-right: 2px solid #333; }
+            #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt a:nth-of-type(2) {
+              border-top: 2px solid #333;
+              border-bottom: 2px solid #333; }
+        #wrap .swiper-wrapper .swiper-slide.intro .inner .content .thumbnail {
+          display: inline-block;
+          width: 20vw;
+          height: 150px;
+          margin-right: 10px; }
+          #wrap .swiper-wrapper .swiper-slide.intro .inner .content .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center; }
+      #wrap .swiper-wrapper .swiper-slide.uiux .inner .content {
+        width: 100%;
+        height: 100%; }
+        #wrap .swiper-wrapper .swiper-slide.uiux .inner .content::after {
+          content: '';
+          display: block;
+          clear: both; }
+        #wrap .swiper-wrapper .swiper-slide.uiux .inner .content .txt {
+          padding-left: 110px;
+          width: 38vw;
+          height: 100%;
+          float: left;
+          font-size: 0; }
+          #wrap .swiper-wrapper .swiper-slide.uiux .inner .content .txt h2 {
+            font: 400 36px/1.4 'Outfit';
+            color: #333;
+            margin-bottom: 40px; }
+          #wrap .swiper-wrapper .swiper-slide.uiux .inner .content .txt p {
+            font: 400 15px/1.6 'Noto Sans KR';
+            color: #444;
+            margin-bottom: 20px; }
+            #wrap .swiper-wrapper .swiper-slide.uiux .inner .content .txt p:last-of-type {
+              margin-bottom: 40px; }
+          #wrap .swiper-wrapper .swiper-slide.uiux .inner .content .txt a {
+            display: inline-block;
+            font: 500 15px/1 'Outfit';
+            color: #444;
+            padding: 15px 20px; }
+            #wrap .swiper-wrapper .swiper-slide.uiux .inner .content .txt a i {
+              font-size: 12px;
+              margin-right: 5px;
+              color: #444; }
+            #wrap .swiper-wrapper .swiper-slide.uiux .inner .content .txt a:nth-of-type(1) {
+              border-top: 2px solid #333;
+              border-bottom: 2px solid #333;
+              border-right: 2px solid #333; }
+            #wrap .swiper-wrapper .swiper-slide.uiux .inner .content .txt a:nth-of-type(2) {
+              border-top: 2px solid #333;
+              border-bottom: 2px solid #333; }
+        #wrap .swiper-wrapper .swiper-slide.uiux .inner .content .thumbnail {
+          display: block;
+          width: 11vw;
+          height: 100%;
+          margin-left: 30px;
+          float: right; }
+          #wrap .swiper-wrapper .swiper-slide.uiux .inner .content .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center; }
       #wrap .swiper-wrapper .swiper-slide.grid .inner h1 {
         font-size: 65px; }
   #wrap .swiper-button-next {

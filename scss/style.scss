@@ -1,17 +1,17 @@
 @charset 'utf-8';
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700&family=Syncopate:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;500;700&family=Syncopate:wght@700&display=swap');
 @import 'reset';
 
 
 // font-family: 'Noto Sans KR', sans-serif;
-// font-family: 'Roboto', sans-serif;
+// font-family: 'Outfit', sans-serif;
 // font-family: 'Syncopate', sans-serif;
 
 #wrap {
     width: 100%; height: 100vh;
     position: relative;
-    background: palegoldenrod;
+    background: #111;
     overflow: hidden;
 
     .navibar {
@@ -46,7 +46,7 @@
         .swiper-slide {
             width: 60vw; height: 70vh;
             position: relative;
-            top: 15vh; left: 10vw;
+            top: 17vh; left: 10vw;
 
             .inner {
                 width: 100%; height: 100%;
@@ -79,19 +79,87 @@
             &.intro {
                 .inner {
                     h1 { font-size: 90px;}
-                    .txt {
-                        width: 100%; height: 100%;
+                    .content {
+                        width:100%; height: 100%;
                         padding-left: 110px;
-                        h2 {
-                            font: 500 32px/1 'Roboto'; color: #333;
-                            margin-bottom: 60px;
+                        .txt {
+                            width: 100%; font-size: 0;
+                            h2 {
+                                font: 400 34px/1.4 'Outfit'; color: #333;
+                                margin-bottom: 30px;
+                            }
+                            p {
+                                font: 400 15px/1.6 'Noto Sans KR'; color: #444;
+                                margin-bottom: 20px;
+                                &:last-of-type { margin-bottom: 30px;}
+                            }
+                            a {
+                                display: inline-block;
+                                font: 500 15px/1 'Outfit'; color: #444;
+                                padding: 15px 20px;
+                                margin-bottom: 30px;
+                                i {
+                                    font-size: 12px; margin-right: 5px; color: #444;
+                                }
+                                &:nth-of-type(1) { border-top: 2px solid #333; border-bottom: 2px solid #333; border-right: 2px solid #333;}
+                                &:nth-of-type(2) { border-top: 2px solid #333; border-bottom: 2px solid #333;}
+                            }
                         }
-                        p {
-                            font: 400 16px/1.6 'Noto Sans KR'; color: #444;
-                            margin-bottom: 20px;
+    
+                        .thumbnail {
+                            display: inline-block;
+                            width: 20vw; height: 150px;
+                            margin-right: 10px;
+                            img {
+                                width: 100%; height: 100%;
+                                object-fit: cover; object-position: center;
+                            }
                         }
                     }
-                    
+                }
+            }
+            &.uiux {
+                .inner {
+                    .content {
+                        width:100%; height: 100%;
+                        &::after { content: ''; display: block; clear: both;}
+                        .txt {
+                            padding-left: 110px;
+                            width: 38vw; height: 100%;
+                            float: left;
+                            font-size: 0;
+                            h2 {
+                                font: 400 36px/1.4 'Outfit'; color: #333;
+                                margin-bottom: 40px;
+                            }
+                            p {
+                                font: 400 15px/1.6 'Noto Sans KR'; color: #444;
+                                margin-bottom: 20px;
+                                &:last-of-type { margin-bottom: 40px;}
+                            }
+                            a {
+                                display: inline-block;
+                                font: 500 15px/1 'Outfit'; color: #444;
+                                padding: 15px 20px;
+                                i {
+                                    font-size: 12px; margin-right: 5px; color: #444;
+                                }
+                                &:nth-of-type(1) { border-top: 2px solid #333; border-bottom: 2px solid #333; border-right: 2px solid #333;}
+                                &:nth-of-type(2) { border-top: 2px solid #333; border-bottom: 2px solid #333;}
+                            }
+                        }
+    
+                        .thumbnail {
+                            display: block;
+                            width: 11vw; height: 100%;
+                            margin-left: 30px;
+                            float: right;
+                            img {
+                                width: 100%; height: 100%;
+                                object-fit: cover; object-position: center;
+                            }
+                        }
+                    }
                 }
             }
             &.grid {
