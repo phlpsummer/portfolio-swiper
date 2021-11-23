@@ -178,8 +178,11 @@ a {
           #wrap .swiper-wrapper .swiper-slide.uiux .inner .content .thumbnail img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            object-position: center; }
+            object-fit: none;
+            object-position: right top;
+            transition: 2s; }
+          #wrap .swiper-wrapper .swiper-slide.uiux .inner .content .thumbnail:hover img {
+            object-position: left bottom; }
       #wrap .swiper-wrapper .swiper-slide.grid .inner h1 {
         font-size: 65px; }
   #wrap .swiper-button-next {

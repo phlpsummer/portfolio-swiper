@@ -156,8 +156,11 @@
                             float: right;
                             img {
                                 width: 100%; height: 100%;
-                                object-fit: cover; object-position: center;
+                                object-fit: none; object-position: right top;
+                                transition: 2s;
                             }
+
+                            &:hover { img { object-position: left bottom;}}
                         }
                     }
                 }
