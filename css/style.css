@@ -100,14 +100,16 @@ a {
           #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt .subtitle {
             margin-bottom: 30px; }
             #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt .subtitle li {
-              margin-bottom: 15px; }
+              margin-bottom: 8px; }
               #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt .subtitle li p {
                 display: inline-block;
                 background: #222;
                 position: relative;
-                overflow: hidden; }
+                overflow: hidden;
+                box-sizing: content-box;
+                padding: 5px; }
                 #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt .subtitle li p span {
-                  font: 400 30px/1 'Outfit';
+                  font: 400 26px/1 'Outfit';
                   color: #fff; }
           #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt > p {
             font: 400 15px/1.6 'Noto Sans KR';
@@ -151,14 +153,16 @@ a {
           #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .txt .subtitle {
             margin-bottom: 30px; }
             #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .txt .subtitle li {
-              margin-bottom: 15px; }
+              margin-bottom: 8px; }
               #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .txt .subtitle li p {
                 display: inline-block;
                 background: #222;
                 position: relative;
-                overflow: hidden; }
+                overflow: hidden;
+                box-sizing: content-box;
+                padding: 5px; }
                 #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .txt .subtitle li p span {
-                  font: 400 30px/1 'Outfit';
+                  font: 400 26px/1 'Outfit';
                   color: #fff; }
           #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .txt > p {
             font: 400 15px/1.6 'Noto Sans KR';

@@ -89,14 +89,16 @@
                             .subtitle {
                                 margin-bottom: 30px;
                                 li {
-                                    margin-bottom: 15px;
+                                    margin-bottom: 8px;
                                     p {
                                         display: inline-block;
                                         background: #222;
                                         position: relative;
                                         overflow: hidden;
+                                        box-sizing: content-box;
+                                        padding: 5px;
                                         span {
-                                            font: 400 30px/1 'Outfit'; color: #fff;
+                                            font: 400 26px/1 'Outfit'; color: #fff;
                                         }
                                     }
                                 }
@@ -141,14 +143,16 @@
                             .subtitle {
                                 margin-bottom: 30px;
                                 li {
-                                    margin-bottom: 15px;
+                                    margin-bottom: 8px;
                                     p {
                                         display: inline-block;
                                         background: #222;
                                         position: relative;
                                         overflow: hidden;
+                                        box-sizing: content-box;
+                                        padding: 5px;
                                         span {
-                                            font: 400 30px/1 'Outfit'; color: #fff;
+                                            font: 400 26px/1 'Outfit'; color: #fff;
                                         }
                                     }
                                 }
