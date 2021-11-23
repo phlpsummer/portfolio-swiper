@@ -44,8 +44,6 @@ for(let el of navi){
 
 slideTxt($txt,500,1000);
 
-
-
 function activation(){
     let item = document.querySelector(".swiper-slide-active");
     let i = item.getAttribute("data-swiper-slide-index");
@@ -68,13 +66,11 @@ function slideTxt(frame,delay,time){
                 backgroundColor: bgColor,
                 position: "absolute",
                 top: 0,
-                left: "-100%"
+                left: 0
             })
     );
-    $(frame).find(".mask").stop().delay(delay).animate({left:0},time,"easeInExpo",function(){
-        $(this).prev("span").css({opacity:1});
-        $(this).stop().animate({left:"100%"},time,"easeInExpo",function(){
-            $(this).remove();
-        });
+    
+    $(frame).find(".mask").stop().delay(delay).animate({left:"100%"},time,"easeInExpo",function(){
+        $(this).remove();
     });
 }

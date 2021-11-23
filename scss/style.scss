@@ -92,11 +92,11 @@
                                     margin-bottom: 15px;
                                     p {
                                         display: inline-block;
+                                        background: #222;
                                         position: relative;
                                         overflow: hidden;
                                         span {
-                                            font: 400 30px/1 'Outfit'; color: #333;
-                                            opacity: 0;
+                                            font: 400 30px/1 'Outfit'; color: #fff;
                                         }
                                     }
                                 }
@@ -144,14 +144,15 @@
                                     margin-bottom: 15px;
                                     p {
                                         display: inline-block;
+                                        background: #222;
                                         position: relative;
                                         overflow: hidden;
                                         span {
-                                            font: 400 30px/1 'Outfit'; color: #333;
-                                            opacity: 0;
+                                            font: 400 30px/1 'Outfit'; color: #fff;
                                         }
                                     }
                                 }
+
                             }
                             >p {
                                 font: 400 15px/1.6 'Noto Sans KR'; color: #444;
