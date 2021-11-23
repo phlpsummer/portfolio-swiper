@@ -2,7 +2,6 @@ const menu = ["INTRO", "PORTFOLIO", "OVERVIEW", "CONTACT"]
 
 const swiper = new Swiper('#wrap',{
     slidesPerView: "auto",
-    // centeredSlides: true,
     loop: true,
     spaceBetween: 100,
     mousewheel: true,
@@ -20,8 +19,6 @@ const swiper = new Swiper('#wrap',{
             return `<span class="${className}">${menu[index]}</span>`
         }
     },
-    
-
 });
 
 
@@ -29,6 +26,8 @@ const bgs = document.querySelectorAll(".bg li");
 const prev = document.querySelector(".swiper-button-prev");
 const next = document.querySelector(".swiper-button-next");
 const navi = document.querySelectorAll(".swiper-pagination span");
+
+const $txt = $(".swiper-slide-active .subtitle");
 
 // prev.addEventListener("click",activation);
 // next.addEventListener("click",activation);
@@ -43,6 +42,10 @@ for(let el of navi){
     });
 }
 
+slideTxt($txt,500,1000);
+
+
+
 function activation(){
     let item = document.querySelector(".swiper-slide-active");
     let i = item.getAttribute("data-swiper-slide-index");
@@ -51,4 +54,27 @@ function activation(){
         el.classList.remove("on");
     }
     bgs[i].classList.add("on");
+    slideTxt($txt,500,1000);
+}
+
+function slideTxt(frame,delay,time){
+    var bgColor = $(frame).find("span").css("color");
+    $(frame).find("p").append(
+        $("<em class='mask'>")
+            .css({
+                display: "block",
+                width: "100%",
+                height: "100%",
+                backgroundColor: bgColor,
+                position: "absolute",
+                top: 0,
+                left: "-100%"
+            })
+    );
+    $(frame).find(".mask").stop().delay(delay).animate({left:0},time,"easeInExpo",function(){
+        $(this).prev("span").css({opacity:1});
+        $(this).stop().animate({left:"100%"},time,"easeInExpo",function(){
+            $(this).remove();
+        });
+    });
 }

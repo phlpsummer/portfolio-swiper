@@ -83,14 +83,26 @@
                         &::after { content: ''; display: block; clear: both;}
                         .txt {
                             padding-left: 110px;
-                            width: 38vw; height: 100%;
+                            width: 37vw; height: 100%;
                             float: left;
                             font-size: 0;
-                            h2 {
-                                font: 400 32px/1.4 'Outfit'; color: #333;
-                                margin-bottom: 40px;
+                            .subtitle {
+                                margin-bottom: 30px;
+                                li {
+                                    margin-bottom: 15px;
+                                    p {
+                                        display: inline-block;
+                                        position: relative;
+                                        overflow: hidden;
+                                        span {
+                                            font: 400 30px/1 'Outfit'; color: #333;
+                                            opacity: 0;
+                                        }
+                                    }
+                                }
+
                             }
-                            p {
+                            >p {
                                 font: 400 15px/1.6 'Noto Sans KR'; color: #444;
                                 margin-bottom: 20px;
                                 &:last-of-type { margin-bottom: 40px;}
@@ -109,7 +121,7 @@
     
                         .thumbnail {
                             width: 12vw; height: 100%;
-                            margin-left: 30px;
+                            margin-left: 2vw;
                             float: right;
                             img {
                                 width: 100%; height: 100%;
@@ -126,11 +138,22 @@
                         padding-left: 110px;
                         .txt {
                             width: 100%; font-size: 0;
-                            h2 {
-                                font: 400 32px/1.4 'Outfit'; color: #333;
+                            .subtitle {
                                 margin-bottom: 30px;
+                                li {
+                                    margin-bottom: 15px;
+                                    p {
+                                        display: inline-block;
+                                        position: relative;
+                                        overflow: hidden;
+                                        span {
+                                            font: 400 30px/1 'Outfit'; color: #333;
+                                            opacity: 0;
+                                        }
+                                    }
+                                }
                             }
-                            p {
+                            >p {
                                 font: 400 15px/1.6 'Noto Sans KR'; color: #444;
                                 margin-bottom: 20px;
                                 &:last-of-type { margin-bottom: 30px;}
