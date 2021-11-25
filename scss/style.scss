@@ -179,6 +179,7 @@
     
                         .thumbnail {
                             display: inline-block;
+                            position: relative;
                             width: 20vw; height: 150px;
                             margin-right: 10px;
                             img {
@@ -186,8 +187,22 @@
                                 object-fit: cover;
                             }
 
-                            &:nth-of-type(1) img { object-position: center 5%;}
-                            &:nth-of-type(2) img { object-position: center 3%;}
+                            &::after {
+                                display: block;
+                                position: absolute;
+                                top: 8px; left: 10px;
+                                font: 400 11px/1 'Outfit'; color: #fff;
+                                text-shadow: 2px 3px 4px rgba(0, 0, 0, .4);
+                            }
+
+                            &:nth-of-type(1){
+                                img { object-position: center 5%;}
+                                &::after { content: 'D-RECORD';}
+                            }
+                            &:nth-of-type(2){
+                                img { object-position: center 0%;}
+                                &::after { content: 'ounces'; font-size: 15px;}
+                            } 
 
                             &:hover img { object-position: center bottom; transition: 4s ease-in;}
                         }
