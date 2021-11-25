@@ -40,11 +40,8 @@ a {
     #wrap .bg li:nth-of-type(1) {
       background-image: url(../img/bg1.jpg); }
     #wrap .bg li:nth-of-type(2) {
-      background-image: url(../img/bg2.jpg);
-      background-position: center 75%; }
-    #wrap .bg li:nth-of-type(3) {
       background-image: url(../img/bg3.jpg); }
-    #wrap .bg li:nth-of-type(4) {
+    #wrap .bg li:nth-of-type(3) {
       background-image: url(../img/bg4.jpg);
       background-position: center 42%; }
   #wrap .swiper-wrapper {
@@ -200,7 +197,13 @@ a {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center; }
+            transition: 2s; }
+          #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .thumbnail:nth-of-type(1) img {
+            object-position: center 20%; }
+          #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .thumbnail:nth-of-type(2) img {
+            object-position: center 3%; }
+          #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .thumbnail:hover img {
+            object-position: center bottom; }
   #wrap .swiper-button-next {
     top: 4vh;
     bottom: auto;
