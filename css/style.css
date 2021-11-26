@@ -214,7 +214,8 @@ a {
             object-position: center 0%; }
           #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .thumbnail:nth-of-type(2)::after {
             content: 'ounces';
-            font-size: 15px; }
+            font-size: 14px;
+            top: 6px; }
           #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .thumbnail:hover img {
             object-position: center bottom;
             transition: 4s ease-in; }

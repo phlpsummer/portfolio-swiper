@@ -42,7 +42,7 @@ for(let el of navi){
     });
 }
 
-slideTxt($txt,500,1000);
+slideTxt($txt,100,1000);
 
 function activation(){
     let item = document.querySelector(".swiper-slide-active");
@@ -52,7 +52,7 @@ function activation(){
         el.classList.remove("on");
     }
     bgs[i].classList.add("on");
-    slideTxt($txt,500,1000);
+    slideTxt($txt,100,1000);
 }
 
 function slideTxt(frame,delay,time){
