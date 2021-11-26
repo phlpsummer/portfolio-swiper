@@ -52,7 +52,7 @@ function activation(){
         el.classList.remove("on");
     }
     bgs[i].classList.add("on");
-    slideTxt($txt,100,1000);
+    slideTxt($txt,0,1000);
 }
 
 function slideTxt(frame,delay,time){
