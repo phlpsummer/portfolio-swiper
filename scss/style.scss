@@ -76,7 +76,7 @@
 
             &.swiper-slide-active .inner { opacity: 1;}
 
-            &.intro {
+            &.about {
                 .inner {
                     .content {
                         width:100%; height: 100%;
@@ -105,7 +105,7 @@
 
                             }
                             >p {
-                                font: 400 15px/1.6 'Noto Sans KR'; color: #444;
+                                font: 400 14px/1.6 'Noto Sans KR'; color: #444;
                                 margin-bottom: 20px;
                                 &:last-of-type { margin-bottom: 40px;}
                             }
@@ -156,10 +156,9 @@
                                         }
                                     }
                                 }
-
                             }
                             >p {
-                                font: 400 15px/1.6 'Noto Sans KR'; color: #444;
+                                font: 400 14px/1.6 'Noto Sans KR'; color: #444;
                                 margin-bottom: 20px;
                                 &:last-of-type { margin-bottom: 30px;}
                             }
@@ -180,7 +179,7 @@
                         .thumbnail {
                             display: inline-block;
                             position: relative;
-                            width: 20vw; height: 150px;
+                            width: 20vw; height: 130px;
                             margin-right: 10px;
                             img {
                                 width: 100%; height: 100%;
@@ -214,12 +213,10 @@
                 .inner {
                     .content {
                         width:100%; height: 100%;
-                        &::after { content: ''; display: block; clear: both;}
+                        padding-left: 110px;
+                        position: relative;
                         .txt {
-                            padding-left: 110px;
-                            width: 37vw; height: 100%;
-                            float: left;
-                            font-size: 0;
+                            width: 100%; font-size: 0;
                             .subtitle {
                                 margin-bottom: 30px;
                                 li {
@@ -236,12 +233,16 @@
                                         }
                                     }
                                 }
-
                             }
                             >p {
-                                font: 400 15px/1.6 'Noto Sans KR'; color: #444;
-                                margin-bottom: 20px;
-                                &:last-of-type { margin-bottom: 40px;}
+                                font: 400 16px/1.6 'Noto Sans KR'; color: #444;
+                                margin-bottom: 40px;
+                                &:last-of-type { 
+                                    position: absolute;
+                                    bottom: 0; left: 110px;
+                                    font: 300 14px/1 'Outfit';
+
+                                }
                             }
                             a {
                                 display: inline-block;

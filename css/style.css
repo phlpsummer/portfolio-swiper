@@ -81,61 +81,61 @@ a {
           transform-origin: left center; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
         opacity: 1; }
-      #wrap .swiper-wrapper .swiper-slide.intro .inner .content {
+      #wrap .swiper-wrapper .swiper-slide.about .inner .content {
         width: 100%;
         height: 100%; }
-        #wrap .swiper-wrapper .swiper-slide.intro .inner .content::after {
+        #wrap .swiper-wrapper .swiper-slide.about .inner .content::after {
           content: '';
           display: block;
           clear: both; }
-        #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt {
+        #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt {
           padding-left: 110px;
           width: 37vw;
           height: 100%;
           float: left;
           font-size: 0; }
-          #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt .subtitle {
+          #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt .subtitle {
             margin-bottom: 30px; }
-            #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt .subtitle li {
+            #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt .subtitle li {
               margin-bottom: 8px; }
-              #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt .subtitle li p {
+              #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt .subtitle li p {
                 display: inline-block;
                 background: #222;
                 position: relative;
                 overflow: hidden;
                 box-sizing: content-box;
                 padding: 5px; }
-                #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt .subtitle li p span {
+                #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt .subtitle li p span {
                   font: 400 26px/1 'Outfit';
                   color: #fff; }
-          #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt > p {
-            font: 400 15px/1.6 'Noto Sans KR';
+          #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt > p {
+            font: 400 14px/1.6 'Noto Sans KR';
             color: #444;
             margin-bottom: 20px; }
-            #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt > p:last-of-type {
+            #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt > p:last-of-type {
               margin-bottom: 40px; }
-          #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt a {
+          #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt a {
             display: inline-block;
             font: 500 15px/1 'Outfit';
             color: #444;
             padding: 15px 20px; }
-            #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt a i {
+            #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt a i {
               font-size: 12px;
               margin-right: 5px;
               color: #444; }
-            #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt a:nth-of-type(1) {
+            #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt a:nth-of-type(1) {
               border-top: 2px solid #333;
               border-bottom: 2px solid #333;
               border-right: 2px solid #333; }
-            #wrap .swiper-wrapper .swiper-slide.intro .inner .content .txt a:nth-of-type(2) {
+            #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt a:nth-of-type(2) {
               border-top: 2px solid #333;
               border-bottom: 2px solid #333; }
-        #wrap .swiper-wrapper .swiper-slide.intro .inner .content .thumbnail {
+        #wrap .swiper-wrapper .swiper-slide.about .inner .content .thumbnail {
           width: 12vw;
           height: 100%;
           margin-left: 2vw;
           float: right; }
-          #wrap .swiper-wrapper .swiper-slide.intro .inner .content .thumbnail img {
+          #wrap .swiper-wrapper .swiper-slide.about .inner .content .thumbnail img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -162,7 +162,7 @@ a {
                   font: 400 26px/1 'Outfit';
                   color: #fff; }
           #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .txt > p {
-            font: 400 15px/1.6 'Noto Sans KR';
+            font: 400 14px/1.6 'Noto Sans KR';
             color: #444;
             margin-bottom: 20px; }
             #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .txt > p:last-of-type {
@@ -192,7 +192,7 @@ a {
           display: inline-block;
           position: relative;
           width: 20vw;
-          height: 150px;
+          height: 130px;
           margin-right: 10px; }
           #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .thumbnail img {
             width: 100%;
@@ -221,16 +221,11 @@ a {
             transition: 4s ease-in; }
       #wrap .swiper-wrapper .swiper-slide.contact .inner .content {
         width: 100%;
-        height: 100%; }
-        #wrap .swiper-wrapper .swiper-slide.contact .inner .content::after {
-          content: '';
-          display: block;
-          clear: both; }
+        height: 100%;
+        padding-left: 110px;
+        position: relative; }
         #wrap .swiper-wrapper .swiper-slide.contact .inner .content .txt {
-          padding-left: 110px;
-          width: 37vw;
-          height: 100%;
-          float: left;
+          width: 100%;
           font-size: 0; }
           #wrap .swiper-wrapper .swiper-slide.contact .inner .content .txt .subtitle {
             margin-bottom: 30px; }
@@ -247,11 +242,14 @@ a {
                   font: 400 26px/1 'Outfit';
                   color: #fff; }
           #wrap .swiper-wrapper .swiper-slide.contact .inner .content .txt > p {
-            font: 400 15px/1.6 'Noto Sans KR';
+            font: 400 16px/1.6 'Noto Sans KR';
             color: #444;
-            margin-bottom: 20px; }
+            margin-bottom: 40px; }
             #wrap .swiper-wrapper .swiper-slide.contact .inner .content .txt > p:last-of-type {
-              margin-bottom: 40px; }
+              position: absolute;
+              bottom: 0;
+              left: 110px;
+              font: 300 14px/1 'Outfit'; }
           #wrap .swiper-wrapper .swiper-slide.contact .inner .content .txt a {
             display: inline-block;
             font: 500 15px/1 'Outfit';
