@@ -40,8 +40,10 @@ a {
     #wrap .bg li:nth-of-type(1) {
       background-image: url(../img/bg1.jpg); }
     #wrap .bg li:nth-of-type(2) {
-      background-image: url(../img/bg3.jpg); }
+      background-image: url(../img/bg2.jpg); }
     #wrap .bg li:nth-of-type(3) {
+      background-image: url(../img/bg3.jpg); }
+    #wrap .bg li:nth-of-type(4) {
       background-image: url(../img/bg4.jpg);
       background-position: center 42%; }
   #wrap .swiper-wrapper {
@@ -219,6 +221,85 @@ a {
           #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .thumbnail:hover img {
             object-position: center bottom;
             transition: 4s ease-in; }
+      #wrap .swiper-wrapper .swiper-slide.artworks .inner .content {
+        width: 100%;
+        height: 100%;
+        padding-left: 110px; }
+        #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt {
+          width: 100%;
+          font-size: 0; }
+          #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt .subtitle {
+            margin-bottom: 30px; }
+            #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt .subtitle li {
+              margin-bottom: 8px; }
+              #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt .subtitle li p {
+                display: inline-block;
+                background: #222;
+                position: relative;
+                overflow: hidden;
+                box-sizing: content-box;
+                padding: 5px; }
+                #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt .subtitle li p span {
+                  font: 400 26px/1 'Outfit';
+                  color: #fff; }
+          #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt > p {
+            font: 400 14px/1.6 'Noto Sans KR';
+            color: #444;
+            margin-bottom: 20px; }
+            #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt > p:last-of-type {
+              margin-bottom: 30px; }
+          #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt a {
+            display: inline-block;
+            font: 500 15px/1 'Outfit';
+            color: #444;
+            padding: 15px 20px;
+            margin-bottom: 30px; }
+            #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt a i {
+              font-size: 12px;
+              margin-right: 5px;
+              color: #444; }
+            #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt a:nth-of-type(1) {
+              border-top: 2px solid #333;
+              border-bottom: 2px solid #333;
+              border-right: 2px solid #333; }
+            #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt a:nth-of-type(2) {
+              border-top: 2px solid #333;
+              border-bottom: 2px solid #333;
+              border-right: 2px solid #333; }
+            #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt a:nth-of-type(3) {
+              border-top: 2px solid #333;
+              border-bottom: 2px solid #333; }
+        #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .thumbnail {
+          display: inline-block;
+          position: relative;
+          width: 20vw;
+          height: 130px;
+          margin-right: 10px; }
+          #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+          #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .thumbnail::after {
+            display: block;
+            position: absolute;
+            top: 8px;
+            left: 10px;
+            font: 400 11px/1 'Outfit';
+            color: #fff;
+            text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4); }
+          #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .thumbnail:nth-of-type(1) img {
+            object-position: center 5%; }
+          #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .thumbnail:nth-of-type(1)::after {
+            content: 'D-RECORD'; }
+          #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .thumbnail:nth-of-type(2) img {
+            object-position: center 0%; }
+          #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .thumbnail:nth-of-type(2)::after {
+            content: 'ounces';
+            font-size: 14px;
+            top: 6px; }
+          #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .thumbnail:hover img {
+            object-position: center bottom;
+            transition: 4s ease-in; }
       #wrap .swiper-wrapper .swiper-slide.contact .inner .content {
         width: 100%;
         height: 100%;
@@ -249,7 +330,7 @@ a {
               position: absolute;
               bottom: 0;
               left: 110px;
-              font: 300 14px/1 'Outfit'; }
+              font: 300 15px/1 'Outfit'; }
           #wrap .swiper-wrapper .swiper-slide.contact .inner .content .txt a {
             display: inline-block;
             font: 500 15px/1 'Outfit';
