@@ -81,8 +81,60 @@ a {
           margin-left: 60px;
           transform: rotate(-90deg);
           transform-origin: left center; }
+        #wrap .swiper-wrapper .swiper-slide .inner .content .txt .subtitle {
+          margin-bottom: 30px; }
+          #wrap .swiper-wrapper .swiper-slide .inner .content .txt .subtitle li {
+            margin-bottom: 8px; }
+            #wrap .swiper-wrapper .swiper-slide .inner .content .txt .subtitle li p {
+              display: inline-block;
+              background: #222;
+              position: relative;
+              overflow: hidden;
+              box-sizing: content-box;
+              padding: 5px; }
+              #wrap .swiper-wrapper .swiper-slide .inner .content .txt .subtitle li p::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                transition-duration: 1s;
+                transition-delay: 0.5s;
+                transition-timing-function: cubic-bezier(0.66, 0.08, 0, 0.98); }
+              #wrap .swiper-wrapper .swiper-slide .inner .content .txt .subtitle li p span {
+                font: 400 26px/1 'Outfit';
+                color: #fff; }
+            #wrap .swiper-wrapper .swiper-slide .inner .content .txt .subtitle li:nth-of-type(2) p::after {
+              transition-delay: 0.75s; }
+        #wrap .swiper-wrapper .swiper-slide .inner .content .txt > p {
+          font: 400 14px/1.6 'Noto Sans KR';
+          color: #444;
+          margin-bottom: 20px; }
+          #wrap .swiper-wrapper .swiper-slide .inner .content .txt > p:last-of-type {
+            margin-bottom: 40px; }
+        #wrap .swiper-wrapper .swiper-slide .inner .content .txt a {
+          display: inline-block;
+          font: 500 15px/1 'Outfit';
+          color: #444;
+          padding: 15px 20px; }
+          #wrap .swiper-wrapper .swiper-slide .inner .content .txt a i {
+            font-size: 12px;
+            margin-right: 5px;
+            color: #444; }
+          #wrap .swiper-wrapper .swiper-slide .inner .content .txt a:nth-of-type(1) {
+            border-top: 2px solid #333;
+            border-bottom: 2px solid #333;
+            border-right: 2px solid #333; }
+          #wrap .swiper-wrapper .swiper-slide .inner .content .txt a:nth-of-type(2) {
+            border-top: 2px solid #333;
+            border-bottom: 2px solid #333; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
         opacity: 1; }
+        #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner .content .txt .subtitle li p::after {
+          width: 0% !important; }
       #wrap .swiper-wrapper .swiper-slide.about .inner .content {
         width: 100%;
         height: 100%; }
@@ -96,20 +148,6 @@ a {
           height: 100%;
           float: left;
           font-size: 0; }
-          #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt .subtitle {
-            margin-bottom: 30px; }
-            #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt .subtitle li {
-              margin-bottom: 8px; }
-              #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt .subtitle li p {
-                display: inline-block;
-                background: #222;
-                position: relative;
-                overflow: hidden;
-                box-sizing: content-box;
-                padding: 5px; }
-                #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt .subtitle li p span {
-                  font: 400 26px/1 'Outfit';
-                  color: #fff; }
           #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt > p {
             font: 400 14px/1.6 'Noto Sans KR';
             color: #444;
@@ -149,20 +187,6 @@ a {
         #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .txt {
           width: 100%;
           font-size: 0; }
-          #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .txt .subtitle {
-            margin-bottom: 30px; }
-            #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .txt .subtitle li {
-              margin-bottom: 8px; }
-              #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .txt .subtitle li p {
-                display: inline-block;
-                background: #222;
-                position: relative;
-                overflow: hidden;
-                box-sizing: content-box;
-                padding: 5px; }
-                #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .txt .subtitle li p span {
-                  font: 400 26px/1 'Outfit';
-                  color: #fff; }
           #wrap .swiper-wrapper .swiper-slide.portfolio .inner .content .txt > p {
             font: 400 14px/1.6 'Noto Sans KR';
             color: #444;
@@ -228,20 +252,6 @@ a {
         #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt {
           width: 100%;
           font-size: 0; }
-          #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt .subtitle {
-            margin-bottom: 30px; }
-            #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt .subtitle li {
-              margin-bottom: 8px; }
-              #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt .subtitle li p {
-                display: inline-block;
-                background: #222;
-                position: relative;
-                overflow: hidden;
-                box-sizing: content-box;
-                padding: 5px; }
-                #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt .subtitle li p span {
-                  font: 400 26px/1 'Outfit';
-                  color: #fff; }
           #wrap .swiper-wrapper .swiper-slide.artworks .inner .content .txt > p {
             font: 400 14px/1.6 'Noto Sans KR';
             color: #444;
@@ -308,20 +318,6 @@ a {
         #wrap .swiper-wrapper .swiper-slide.contact .inner .content .txt {
           width: 100%;
           font-size: 0; }
-          #wrap .swiper-wrapper .swiper-slide.contact .inner .content .txt .subtitle {
-            margin-bottom: 30px; }
-            #wrap .swiper-wrapper .swiper-slide.contact .inner .content .txt .subtitle li {
-              margin-bottom: 8px; }
-              #wrap .swiper-wrapper .swiper-slide.contact .inner .content .txt .subtitle li p {
-                display: inline-block;
-                background: #222;
-                position: relative;
-                overflow: hidden;
-                box-sizing: content-box;
-                padding: 5px; }
-                #wrap .swiper-wrapper .swiper-slide.contact .inner .content .txt .subtitle li p span {
-                  font: 400 26px/1 'Outfit';
-                  color: #fff; }
           #wrap .swiper-wrapper .swiper-slide.contact .inner .content .txt > p {
             font: 400 16px/1.6 'Noto Sans KR';
             color: #444;

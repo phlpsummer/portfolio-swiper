@@ -42,7 +42,7 @@ for(let el of navi){
     });
 }
 
-slideTxt($txt,100,1000);
+// slideTxt($txt,100,1000);
 
 function activation(){
     let item = document.querySelector(".swiper-slide-active");
@@ -55,22 +55,22 @@ function activation(){
     slideTxt($txt,0,1000);
 }
 
-function slideTxt(frame,delay,time){
-    var bgColor = $(frame).find("span").css("color");
-    $(frame).find("p").append(
-        $("<em class='mask'>")
-            .css({
-                display: "block",
-                width: "100%",
-                height: "100%",
-                backgroundColor: bgColor,
-                position: "absolute",
-                top: 0,
-                left: 0
-            })
-    );
+// function slideTxt(frame,delay,time){
+//     var bgColor = $(frame).find("span").css("color");
+//     $(frame).find("p").append(
+//         $("<em class='mask'>")
+//             .css({
+//                 display: "block",
+//                 width: "100%",
+//                 height: "100%",
+//                 backgroundColor: bgColor,
+//                 position: "absolute",
+//                 top: 0,
+//                 left: 0
+//             })
+//     );
     
-    $(frame).find(".mask").stop().delay(delay).animate({left:"100%"},time,"easeInExpo",function(){
-        $(this).remove();
-    });
-}
+//     $(frame).find(".mask").stop().delay(delay).animate({left:"100%"},time,"easeInExpo",function(){
+//         $(this).remove();
+//     });
+// }
