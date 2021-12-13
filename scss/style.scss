@@ -52,11 +52,10 @@
                 width: 100%; height: 100%;
                 background: rgba(255, 255, 255, 1);
                 padding: 60px;
-                // backdrop-filter: blur(20px);
                 opacity: 0;
                 transition: opacity 1s;
                 position: relative;
-                overflow-y: auto;
+                // overflow-y: auto;
 
                 &::after {
                     content: ''; display: block;
@@ -109,7 +108,7 @@
                         }
                         >p {
                             font: 400 16px/1.8 'Noto Sans KR'; color: #444;
-                            margin-bottom: 40px;
+                            margin-bottom: 30px;
                             &:last-of-type { margin-bottom: 40px;}
                         }
                         .btns {
@@ -150,7 +149,7 @@
                                     font: 400 15px/1 'Outfit'; color: #666;
                                     margin-bottom: 10px; letter-spacing: 1px;
 
-                                    &:first-of-type { font: 400 18px/1 'Outfit'; color: #333; margin-bottom: 20px; font-style: italic;}
+                                    &:first-of-type { font: 500 17px/1 'Outfit'; color: #333; margin-bottom: 20px; font-style: italic;}
                                 }
                             }
                             
@@ -168,62 +167,42 @@
                     }
                 }
             }
-            &.portfolio {
+            &.web {
                 .inner {
                     .content {
                         width:100%; height: 100%;
-                        padding-left: 110px;
-                        .txt {
-                            width: 100%; font-size: 0;
-
-                            >p {
-                                font: 400 14px/1.6 'Noto Sans KR'; color: #444;
-                                margin-bottom: 20px;
-                                &:last-of-type { margin-bottom: 30px;}
-                            }
-                            a {
-                                display: inline-block;
-                                font: 500 15px/1 'Outfit'; color: #444;
-                                padding: 15px 20px;
-                                margin-bottom: 30px;
-                                i {
-                                    font-size: 12px; margin-right: 5px; color: #444;
-                                }
-                                &:nth-of-type(1) { border-top: 2px solid #333; border-bottom: 2px solid #333; border-right: 2px solid #333;}
-                                &:nth-of-type(2) { border-top: 2px solid #333; border-bottom: 2px solid #333; border-right: 2px solid #333;}
-                                &:nth-of-type(3) { border-top: 2px solid #333; border-bottom: 2px solid #333;}
-                            }
-                        }
-    
+                        &::after { content: ''; display: block; clear: both;}
                         .thumbnail {
-                            display: inline-block;
-                            position: relative;
-                            width: 20vw; height: 130px;
-                            margin-right: 10px;
+                            padding-left: 110px;
+                            width: 40%; height: 100%;
+                            margin-right: 2vw;
+                            float: left;
                             img {
                                 width: 100%; height: 100%;
-                                object-fit: cover;
+                                object-fit: cover; object-position: top;
+                                cursor: pointer;
                             }
-
-                            &::after {
-                                display: block;
-                                position: absolute;
-                                top: 8px; left: 10px;
-                                font: 400 11px/1 'Outfit'; color: #fff;
-                                text-shadow: 2px 3px 4px rgba(0, 0, 0, .4);
-                            }
-
-                            &:nth-of-type(1){
-                                img { object-position: center 5%;}
-                                &::after { content: 'D-RECORD';}
-                            }
-                            &:nth-of-type(2){
-                                img { object-position: center 0%;}
-                                &::after { content: 'ounces'; font-size: 14px; top: 6px;}
-                            } 
-
-                            &:hover img { object-position: center bottom; transition: 4s ease-in;}
                         }
+
+                        .txt {
+                            width: 55%; height: 100%;
+                            float: right;
+                            padding-right: 50px;
+                            overflow-y: scroll;
+
+                            >p {
+                                span {
+                                    display: block;
+                                    font: 400 15px/1 'Noto Sans KR'; color: #666;
+                                    margin-bottom: 10px;
+
+                                    &:first-of-type { font: 500 16px/1 'Outfit'; color: #333; margin-bottom: 20px; font-style: italic;}
+                                }
+                            }
+                            
+                        }
+    
+
                     }
                 }
             }
