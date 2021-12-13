@@ -62,7 +62,8 @@ a {
         padding: 60px;
         opacity: 0;
         transition: opacity 1s;
-        position: relative; }
+        position: relative;
+        overflow-y: auto; }
         #wrap .swiper-wrapper .swiper-slide .inner::after {
           content: '';
           display: block;
@@ -110,27 +111,29 @@ a {
             #wrap .swiper-wrapper .swiper-slide .inner .content .txt .subtitle li:nth-of-type(2) p::after {
               transition-delay: 0.75s; }
         #wrap .swiper-wrapper .swiper-slide .inner .content .txt > p {
-          font: 400 14px/1.6 'Noto Sans KR';
+          font: 400 16px/1.8 'Noto Sans KR';
           color: #444;
-          margin-bottom: 20px; }
+          margin-bottom: 40px; }
           #wrap .swiper-wrapper .swiper-slide .inner .content .txt > p:last-of-type {
             margin-bottom: 40px; }
-        #wrap .swiper-wrapper .swiper-slide .inner .content .txt a {
-          display: inline-block;
-          font: 500 15px/1 'Outfit';
-          color: #444;
-          padding: 15px 20px; }
-          #wrap .swiper-wrapper .swiper-slide .inner .content .txt a i {
-            font-size: 12px;
-            margin-right: 5px;
-            color: #444; }
-          #wrap .swiper-wrapper .swiper-slide .inner .content .txt a:nth-of-type(1) {
-            border-top: 2px solid #333;
-            border-bottom: 2px solid #333;
-            border-right: 2px solid #333; }
-          #wrap .swiper-wrapper .swiper-slide .inner .content .txt a:nth-of-type(2) {
-            border-top: 2px solid #333;
-            border-bottom: 2px solid #333; }
+        #wrap .swiper-wrapper .swiper-slide .inner .content .txt .btns {
+          font-size: 0; }
+          #wrap .swiper-wrapper .swiper-slide .inner .content .txt .btns a {
+            display: inline-block;
+            font: 500 15px/1 'Outfit';
+            color: #444;
+            padding: 15px 20px; }
+            #wrap .swiper-wrapper .swiper-slide .inner .content .txt .btns a i {
+              font-size: 12px;
+              margin-right: 5px;
+              color: #444; }
+            #wrap .swiper-wrapper .swiper-slide .inner .content .txt .btns a:nth-of-type(1) {
+              border-top: 2px solid #333;
+              border-bottom: 2px solid #333;
+              border-right: 2px solid #333; }
+            #wrap .swiper-wrapper .swiper-slide .inner .content .txt .btns a:nth-of-type(2) {
+              border-top: 2px solid #333;
+              border-bottom: 2px solid #333; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
         opacity: 1; }
         #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner .content .txt .subtitle li p::after {
@@ -146,30 +149,18 @@ a {
           padding-left: 110px;
           width: 37vw;
           height: 100%;
-          float: left;
-          font-size: 0; }
-          #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt > p {
-            font: 400 14px/1.6 'Noto Sans KR';
-            color: #444;
-            margin-bottom: 20px; }
-            #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt > p:last-of-type {
-              margin-bottom: 40px; }
-          #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt a {
-            display: inline-block;
-            font: 500 15px/1 'Outfit';
-            color: #444;
-            padding: 15px 20px; }
-            #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt a i {
-              font-size: 12px;
-              margin-right: 5px;
-              color: #444; }
-            #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt a:nth-of-type(1) {
-              border-top: 2px solid #333;
-              border-bottom: 2px solid #333;
-              border-right: 2px solid #333; }
-            #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt a:nth-of-type(2) {
-              border-top: 2px solid #333;
-              border-bottom: 2px solid #333; }
+          float: left; }
+          #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt > p span {
+            display: block;
+            font: 400 15px/1 'Outfit';
+            color: #666;
+            margin-bottom: 10px;
+            letter-spacing: 1px; }
+            #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt > p span:first-of-type {
+              font: 400 18px/1 'Outfit';
+              color: #333;
+              margin-bottom: 20px;
+              font-style: italic; }
         #wrap .swiper-wrapper .swiper-slide.about .inner .content .thumbnail {
           width: 12vw;
           height: 100%;

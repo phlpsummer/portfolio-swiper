@@ -52,25 +52,4 @@ function activation(){
         el.classList.remove("on");
     }
     bgs[i].classList.add("on");
-    slideTxt($txt,0,1000);
 }
-
-// function slideTxt(frame,delay,time){
-//     var bgColor = $(frame).find("span").css("color");
-//     $(frame).find("p").append(
-//         $("<em class='mask'>")
-//             .css({
-//                 display: "block",
-//                 width: "100%",
-//                 height: "100%",
-//                 backgroundColor: bgColor,
-//                 position: "absolute",
-//                 top: 0,
-//                 left: 0
-//             })
-//     );
-    
-//     $(frame).find(".mask").stop().delay(delay).animate({left:"100%"},time,"easeInExpo",function(){
-//         $(this).remove();
-//     });
-// }
