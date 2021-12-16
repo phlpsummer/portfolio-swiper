@@ -78,7 +78,7 @@
                         .subtitle {
                             margin-bottom: 30px;
                             li {
-                                margin-bottom: 8px;
+                                margin-bottom: 5px;
                                 p {
                                     display: inline-block;
                                     background: #222;
@@ -99,7 +99,7 @@
                                     }
 
                                     span {
-                                        font: 400 26px/1 'Outfit'; color: #fff;
+                                        font: 400 26px/1 'Outfit'; color: #fff; letter-spacing: 1px;
                                     }
                                 }
 
@@ -146,10 +146,10 @@
                             >p {
                                 span {
                                     display: block;
-                                    font: 400 15px/1 'Outfit'; color: #666;
+                                    font: 400 15px/1 'Outfit'; color: #444;
                                     margin-bottom: 10px; letter-spacing: 1px;
 
-                                    &:first-of-type { font: 500 17px/1 'Outfit'; color: #333; margin-bottom: 20px; font-style: italic;}
+                                    &:first-of-type { font: 400 18px/1 'Outfit'; color: #222; margin-bottom: 20px; font-style: italic;}
                                 }
                             }
                             

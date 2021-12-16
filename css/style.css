@@ -84,7 +84,7 @@ a {
         #wrap .swiper-wrapper .swiper-slide .inner .content .txt .subtitle {
           margin-bottom: 30px; }
           #wrap .swiper-wrapper .swiper-slide .inner .content .txt .subtitle li {
-            margin-bottom: 8px; }
+            margin-bottom: 5px; }
             #wrap .swiper-wrapper .swiper-slide .inner .content .txt .subtitle li p {
               display: inline-block;
               background: #222;
@@ -106,7 +106,8 @@ a {
                 transition-timing-function: cubic-bezier(0.66, 0.08, 0, 0.98); }
               #wrap .swiper-wrapper .swiper-slide .inner .content .txt .subtitle li p span {
                 font: 400 26px/1 'Outfit';
-                color: #fff; }
+                color: #fff;
+                letter-spacing: 1px; }
             #wrap .swiper-wrapper .swiper-slide .inner .content .txt .subtitle li:nth-of-type(2) p::after {
               transition-delay: 0.75s; }
         #wrap .swiper-wrapper .swiper-slide .inner .content .txt > p {
@@ -152,12 +153,12 @@ a {
           #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt > p span {
             display: block;
             font: 400 15px/1 'Outfit';
-            color: #666;
+            color: #444;
             margin-bottom: 10px;
             letter-spacing: 1px; }
             #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt > p span:first-of-type {
-              font: 500 17px/1 'Outfit';
-              color: #333;
+              font: 400 18px/1 'Outfit';
+              color: #222;
               margin-bottom: 20px;
               font-style: italic; }
         #wrap .swiper-wrapper .swiper-slide.about .inner .content .thumbnail {
