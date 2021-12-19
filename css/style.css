@@ -323,20 +323,48 @@ a {
             font: 400 16px/1.6 'Noto Sans KR';
             color: #444;
             margin-bottom: 40px; }
-        #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form a {
-          display: inline-block;
-          font: 500 15px/1 'Outfit';
-          color: #444;
-          padding: 15px 20px; }
-          #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form a i {
-            font-size: 12px;
-            margin-right: 5px;
-            color: #444; }
-          #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form a:nth-of-type(1) {
+        #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form {
+          width: 50%;
+          font-size: 0; }
+          #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form input[type=text] {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #555;
+            padding: 10px;
+            font: 300 16px/1.6 'Noto Sans KR';
+            color: #444;
+            margin-bottom: 30px;
+            transition: border 0.5s; }
+            #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form input[type=text]:focus {
+              outline: none;
+              border-bottom: 2px solid #9ee082; }
+          #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form textarea {
+            width: 100%;
+            background: transparent;
+            padding: 10px;
+            font: 300 16px/1.6 'Noto Sans KR';
+            color: #444;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            transition: border 0.5s; }
+            #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form textarea:focus {
+              outline: none;
+              border: 2px solid #9ee082; }
+          #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form input[type=submit], #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form input[type=reset] {
+            width: 140px;
+            height: 45px;
+            background: transparent;
+            font: 500 15px/45px 'Outfit';
+            color: #444;
+            text-align: center;
+            border: none;
+            cursor: pointer; }
+          #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form input[type=submit] {
             border-top: 2px solid #333;
             border-bottom: 2px solid #333;
             border-right: 2px solid #333; }
-          #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form a:nth-of-type(2) {
+          #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form input[type=reset] {
             border-top: 2px solid #333;
             border-bottom: 2px solid #333; }
         #wrap .swiper-wrapper .swiper-slide.contact .inner .content .copyright {

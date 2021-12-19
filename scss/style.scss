@@ -317,18 +317,47 @@
 
                         }
                         #contact-form {
+                            width: 50%;
+                            font-size: 0;
 
+                            input[type=text] {
+                                width: 100%;
+                                background: transparent;
+                                border: none; border-bottom: 1px solid #555;
+                                padding: 10px;
+                                font: 300 16px/1.6 'Noto Sans KR'; color: #444;
+                                margin-bottom: 30px;
+                                transition: border 0.5s;
 
-                            a {
-                                display: inline-block;
-                                font: 500 15px/1 'Outfit'; color: #444;
-                                padding: 15px 20px;
-                                i {
-                                    font-size: 12px; margin-right: 5px; color: #444;
+                                &:focus {
+                                    outline: none;
+                                    border-bottom: 2px solid #9ee082;
                                 }
-                                &:nth-of-type(1) { border-top: 2px solid #333; border-bottom: 2px solid #333; border-right: 2px solid #333;}
-                                &:nth-of-type(2) { border-top: 2px solid #333; border-bottom: 2px solid #333;}
                             }
+
+                            textarea {
+                                width: 100%;
+                                background: transparent;
+                                padding: 10px;
+                                font: 300 16px/1.6 'Noto Sans KR'; color: #444;
+                                margin-top: 20px; margin-bottom: 30px;
+                                transition: border 0.5s;
+
+                                &:focus {
+                                    outline: none;
+                                    border: 2px solid #9ee082;
+                                }
+                            }
+
+                            input[type=submit] , input[type=reset]{
+                                width: 140px; height: 45px;
+                                background: transparent;
+                                font: 500 15px/45px 'Outfit'; color: #444; text-align: center;
+                                border: none;
+                                cursor: pointer;
+                            }
+                            input[type=submit] { border-top: 2px solid #333; border-bottom: 2px solid #333; border-right: 2px solid #333;}
+                            input[type=reset] { border-top: 2px solid #333; border-bottom: 2px solid #333;}
                         }
                         .copyright {
                             position: absolute;
