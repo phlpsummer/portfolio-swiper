@@ -4,7 +4,7 @@ const swiper = new Swiper('#wrap',{
     slidesPerView: "auto",
     loop: true,
     spaceBetween: 100,
-    mousewheel: true,
+    // mousewheel: true,
 
     navigation: {
         nextEl: ".swiper-button-next",
