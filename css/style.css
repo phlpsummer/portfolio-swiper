@@ -217,7 +217,7 @@ a {
           height: 100%;
           float: right;
           padding-right: 70px;
-          overflow-y: scroll; }
+          overflow-y: auto; }
           #wrap .swiper-wrapper .swiper-slide.web .inner .content .txt > p span {
             display: block;
             font: 400 15px/1 'Noto Sans KR';
@@ -236,7 +236,7 @@ a {
           width: 100%;
           height: 70%;
           font-size: 0;
-          overflow-y: scroll;
+          overflow-y: auto;
           padding-right: 70px; }
           #wrap .swiper-wrapper .swiper-slide.others .inner .content .txt > p span {
             display: block;
@@ -318,7 +318,8 @@ a {
         position: relative; }
         #wrap .swiper-wrapper .swiper-slide.contact .inner .content .txt {
           width: 100%;
-          font-size: 0; }
+          font-size: 0;
+          overflow-y: auto; }
           #wrap .swiper-wrapper .swiper-slide.contact .inner .content .txt > p {
             font: 400 16px/1.6 'Noto Sans KR';
             color: #444;
