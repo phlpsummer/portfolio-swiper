@@ -332,7 +332,7 @@ a {
             border: none;
             border-bottom: 1px solid #555;
             padding: 10px;
-            font: 300 16px/1.6 'Noto Sans KR';
+            font: 300 16px/1.4 'Noto Sans KR';
             color: #444;
             margin-bottom: 30px;
             transition: border 0.5s; }
@@ -341,16 +341,19 @@ a {
               border-bottom: 2px solid #9ee082; }
           #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form textarea {
             width: 100%;
-            background: transparent;
+            background: linear-gradient(45deg, #a8cfd7, #9ee082);
             padding: 10px;
-            font: 300 16px/1.6 'Noto Sans KR';
+            font: 400 16px/1.4 'Noto Sans KR';
             color: #444;
             margin-top: 20px;
             margin-bottom: 30px;
-            transition: border 0.5s; }
+            transition: 0.5s;
+            border: none; }
+            #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form textarea::placeholder {
+              color: #fff; }
             #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form textarea:focus {
-              outline: none;
-              border: 2px solid #9ee082; }
+              outline: 2px solid #9ee082;
+              background: transparent; }
           #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form input[type=submit], #wrap .swiper-wrapper .swiper-slide.contact .inner .content #contact-form input[type=reset] {
             width: 140px;
             height: 45px;

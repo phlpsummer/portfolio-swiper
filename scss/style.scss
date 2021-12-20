@@ -325,7 +325,7 @@
                                 background: transparent;
                                 border: none; border-bottom: 1px solid #555;
                                 padding: 10px;
-                                font: 300 16px/1.6 'Noto Sans KR'; color: #444;
+                                font: 300 16px/1.4 'Noto Sans KR'; color: #444;
                                 margin-bottom: 30px;
                                 transition: border 0.5s;
 
@@ -337,15 +337,18 @@
 
                             textarea {
                                 width: 100%;
-                                background: transparent;
+                                background: linear-gradient(45deg,#a8cfd7,#9ee082);
                                 padding: 10px;
-                                font: 300 16px/1.6 'Noto Sans KR'; color: #444;
+                                font: 400 16px/1.4 'Noto Sans KR'; color: #444;
                                 margin-top: 20px; margin-bottom: 30px;
-                                transition: border 0.5s;
+                                transition: 0.5s;
+                                border: none;
+
+                                &::placeholder { color: #fff;}
 
                                 &:focus {
-                                    outline: none;
-                                    border: 2px solid #9ee082;
+                                    outline: 2px solid #9ee082;
+                                    background: transparent;
                                 }
                             }
 
