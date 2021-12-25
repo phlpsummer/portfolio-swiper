@@ -416,14 +416,14 @@
 
     .swiper-button-next {
         top: 4vh; bottom: auto; right: 8vw;
-        transform: scale(0.4);
+        transform: scale(0.5);
         filter: brightness(5) saturate(0);
         opacity: 1;
     }
     .swiper-button-prev {
         top: 4vh; bottom: auto; left: auto; right: calc(8vw + 50px);
-        transform: scale(0.4);
-        filter: brightness(5) saturate(0);
+        transform: scale(0.5);
+        filter: brightness(1) saturate(0);
         opacity: 1;
     }
 

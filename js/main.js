@@ -25,24 +25,17 @@ const swiper = new Swiper('#wrap',{
 const bgs = document.querySelectorAll(".bg li");
 const prev = document.querySelector(".swiper-button-prev");
 const next = document.querySelector(".swiper-button-next");
-const navi = document.querySelectorAll(".swiper-pagination span");
+const naviBtns = document.querySelectorAll(".swiper-pagination span");
 
-const $txt = $(".swiper-slide-active .subtitle");
-
-// prev.addEventListener("click",activation);
-// next.addEventListener("click",activation);
-// window.addEventListener("mousewheel",activation);
 swiper.on("slideChangeTransitionEnd",activation);
 
-for(let el of navi){
+for(let el of naviBtns){
     el.addEventListener("click",(e)=>{
         var isOn = e.currentTarget.classList.contains("swiper-pagination-bullet-active");
         if(isOn) return;
         swiper.on("slideChangeTransitionEnd",activation);
     });
 }
-
-// slideTxt($txt,100,1000);
 
 function activation(){
     let item = document.querySelector(".swiper-slide-active");
@@ -52,4 +45,16 @@ function activation(){
         el.classList.remove("on");
     }
     bgs[i].classList.add("on");
+
+
+    if(i == 0){
+        prev.style.filter = `brightness(1) saturate(0)`;
+        next.style.filter = `brightness(5) saturate(0)`;
+    } else if (i == 3) {
+        prev.style.filter = `brightness(5) saturate(0)`;
+        next.style.filter = `brightness(1) saturate(0)`;
+    } else {
+        prev.style.filter = `brightness(5) saturate(0)`;
+        next.style.filter = `brightness(5) saturate(0)`;
+    }
 }
