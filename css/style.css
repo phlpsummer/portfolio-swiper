@@ -204,7 +204,7 @@ a {
             position: absolute;
             top: 30px;
             left: 140px;
-            font: 400 16px/1 'Outfit';
+            font: 400 17px/1 'Outfit';
             color: #fff;
             text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
             z-index: 2; }
@@ -227,6 +227,7 @@ a {
               font: 500 16px/1 'Outfit';
               color: #333;
               margin-bottom: 10px;
+              margin-top: 45px;
               font-style: italic; }
             #wrap .swiper-wrapper .swiper-slide.web .inner .content .txt > p span strong {
               display: inline-block;
@@ -268,6 +269,7 @@ a {
               font: 500 16px/1 'Outfit';
               color: #333;
               margin-bottom: 20px;
+              margin-top: 45px;
               font-style: italic; }
             #wrap .swiper-wrapper .swiper-slide.others .inner .content .txt > p span strong {
               display: inline-block;
@@ -304,6 +306,10 @@ a {
               border-right: 2px solid #333; }
             #wrap .swiper-wrapper .swiper-slide.others .inner .content .txt a:nth-of-type(2) {
               border-top: 2px solid #333;
+              border-bottom: 2px solid #333;
+              border-right: 2px solid #333; }
+            #wrap .swiper-wrapper .swiper-slide.others .inner .content .txt a:nth-of-type(3) {
+              border-top: 2px solid #333;
               border-bottom: 2px solid #333; }
         #wrap .swiper-wrapper .swiper-slide.others .inner .content .thumbnail {
           display: inline-block;
@@ -328,15 +334,15 @@ a {
             object-position: center 0%; }
           #wrap .swiper-wrapper .swiper-slide.others .inner .content .thumbnail:nth-of-type(1)::after {
             content: 'ounces';
-            font-size: 16px;
+            font-size: 17px;
             top: 46px; }
           #wrap .swiper-wrapper .swiper-slide.others .inner .content .thumbnail:nth-of-type(2) {
             margin-right: 0; }
             #wrap .swiper-wrapper .swiper-slide.others .inner .content .thumbnail:nth-of-type(2) img {
               object-position: center 0%; }
             #wrap .swiper-wrapper .swiper-slide.others .inner .content .thumbnail:nth-of-type(2)::after {
-              content: 'ounces';
-              font-size: 16px;
+              content: 'Saturday';
+              font-size: 17px;
               top: 46px; }
           #wrap .swiper-wrapper .swiper-slide.others .inner .content .thumbnail:hover img {
             object-position: center bottom;
