@@ -161,6 +161,9 @@ a {
               color: #222;
               margin-bottom: 20px;
               font-style: italic; }
+          #wrap .swiper-wrapper .swiper-slide.about .inner .content .txt > p strong {
+            text-decoration: underline;
+            font-weight: 400; }
         #wrap .swiper-wrapper .swiper-slide.about .inner .content .thumbnail {
           width: 12vw;
           height: 100%;
