@@ -288,11 +288,11 @@ a {
             #wrap .swiper-wrapper .swiper-slide.others .inner .content .txt > p span:nth-of-type(2) strong:nth-of-type(2) {
               background: #f3f2eb; }
             #wrap .swiper-wrapper .swiper-slide.others .inner .content .txt > p span:nth-of-type(3) strong:nth-of-type(1) {
-              background: #111; }
+              background: #f05037; }
             #wrap .swiper-wrapper .swiper-slide.others .inner .content .txt > p span:nth-of-type(3) strong:nth-of-type(2) {
-              background: #111; }
+              background: #e841dc; }
             #wrap .swiper-wrapper .swiper-slide.others .inner .content .txt > p span:nth-of-type(3) strong:nth-of-type(3) {
-              background: #111; }
+              background: #f2edd7; }
           #wrap .swiper-wrapper .swiper-slide.others .inner .content .txt a {
             display: inline-block;
             font: 500 15px/1 'Outfit';
@@ -308,10 +308,6 @@ a {
               border-bottom: 2px solid #333;
               border-right: 2px solid #333; }
             #wrap .swiper-wrapper .swiper-slide.others .inner .content .txt a:nth-of-type(2) {
-              border-top: 2px solid #333;
-              border-bottom: 2px solid #333;
-              border-right: 2px solid #333; }
-            #wrap .swiper-wrapper .swiper-slide.others .inner .content .txt a:nth-of-type(3) {
               border-top: 2px solid #333;
               border-bottom: 2px solid #333; }
         #wrap .swiper-wrapper .swiper-slide.others .inner .content .thumbnail {
