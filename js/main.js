@@ -58,3 +58,12 @@ function activation(){
         next.style.filter = `brightness(5) saturate(0)`;
     }
 }
+
+//video hover
+const vid = document.querySelector(".reactVid");
+vid.addEventListener("mouseenter",(e)=>{
+    e.currentTarget.querySelector("video").play();
+});
+vid.addEventListener("mouseleave",(e)=>{
+    e.currentTarget.querySelector("video").pause();
+});
